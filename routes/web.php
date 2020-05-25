@@ -19,12 +19,14 @@ Route::get('/', function () {
 Route::group(['prefix' => 'api',  'middleware' => 'cors'], function () {
 
     Route::post('/register', 'UserController@register');
+    Route::post('/submit', 'FleetController@submit');
+    Route::get('/fleet-list', 'FleetController@index');
     Route::post('/login', 'UserController@login');
     Route::get('/activation/{email}', 'UserController@activation');
-
+    Route::get('/users', 'UserController@index');
     Route::group(['middleware' => 'auth'], function () {
         //User
-        Route::get('/users', 'UserController@index');
+        
         Route::get('/users/{id}', 'UserController@detail');
         Route::put('/users/{id}', 'UserController@update');
         Route::delete('/users/{id}', 'UserController@delete');
