@@ -19,7 +19,7 @@ class FleetController extends Controller
     
     public function index(Request $request) {
         try {
-            $query = FleetUnitsDB::orderBy('id','DESC')->get();
+            $query = FleetUnits::orderBy('id','DESC')->get();
             if($request->has('limit'))
                 $query = FleetUnits::paginate($request->limit);
 
