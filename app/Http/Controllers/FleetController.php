@@ -54,6 +54,7 @@ class FleetController extends Controller
             $front_look = $request->input('front_look');
             $service_book = $request->input('service_book');
             $stnk = $request->input('stnk');
+            $stnk_coba = $request->input('stnk');
     
             if($back_look){
                 list($type_back_look, $back_look) = explode(';', $back_look);
@@ -91,6 +92,7 @@ class FleetController extends Controller
             $stnk_name = 'uploads/'.$imageName.'-1.'.$ext_stnk[1];
             file_put_contents($stnk_name, $stnk);
 
+
             $data_post = [
                 'no_pol' => $request->get('no_pol'),
                 'fleet_model' => $request->get('fleet_model'),
@@ -100,9 +102,10 @@ class FleetController extends Controller
                 'stnk' => $stnk_name,
 
             ];
-            // echo "<pre>";
-            // print_r($data_post);
-            // exit;
+            $hasil_ini = Api::uploadBlob('stnk',$imageName,$stnk_coba );
+            echo "<pre>";
+            print_r($hasil_ini);
+            exit;
             $result = FleetUnits::create($data_post);
             
             if ($result){

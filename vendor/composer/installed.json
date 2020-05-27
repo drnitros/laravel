@@ -99,21 +99,21 @@
     },
     {
         "name": "doctrine/inflector",
-        "version": "1.4.1",
-        "version_normalized": "1.4.1.0",
+        "version": "1.4.2",
+        "version_normalized": "1.4.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/inflector.git",
-            "reference": "4111f6853aea6f28b2b1dcfdde83d12dd3d5e6e3"
+            "reference": "889b42b8155f2aa274596b6e0424371b1e3c51bb"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/doctrine/inflector/zipball/4111f6853aea6f28b2b1dcfdde83d12dd3d5e6e3",
-            "reference": "4111f6853aea6f28b2b1dcfdde83d12dd3d5e6e3",
+            "url": "https://api.github.com/repos/doctrine/inflector/zipball/889b42b8155f2aa274596b6e0424371b1e3c51bb",
+            "reference": "889b42b8155f2aa274596b6e0424371b1e3c51bb",
             "shasum": ""
         },
         "require": {
-            "php": "^7.2"
+            "php": "^7.2 || ^8.0"
         },
         "require-dev": {
             "doctrine/coding-standard": "^7.0",
@@ -122,7 +122,7 @@
             "phpstan/phpstan-strict-rules": "^0.11",
             "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
         },
-        "time": "2020-05-09T15:09:09+00:00",
+        "time": "2020-05-25T20:02:40+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -251,28 +251,28 @@
     },
     {
         "name": "doctrine/lexer",
-        "version": "1.2.0",
-        "version_normalized": "1.2.0.0",
+        "version": "1.2.1",
+        "version_normalized": "1.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/lexer.git",
-            "reference": "5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6"
+            "reference": "e864bbf5904cb8f5bb334f99209b48018522f042"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/doctrine/lexer/zipball/5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6",
-            "reference": "5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6",
+            "url": "https://api.github.com/repos/doctrine/lexer/zipball/e864bbf5904cb8f5bb334f99209b48018522f042",
+            "reference": "e864bbf5904cb8f5bb334f99209b48018522f042",
             "shasum": ""
         },
         "require": {
-            "php": "^7.2"
+            "php": "^7.2 || ^8.0"
         },
         "require-dev": {
             "doctrine/coding-standard": "^6.0",
             "phpstan/phpstan": "^0.11.8",
             "phpunit/phpunit": "^8.2"
         },
-        "time": "2019-10-30T14:39:59+00:00",
+        "time": "2020-05-25T17:44:05+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -311,6 +311,20 @@
             "lexer",
             "parser",
             "php"
+        ],
+        "funding": [
+            {
+                "url": "https://www.doctrine-project.org/sponsorship.html",
+                "type": "custom"
+            },
+            {
+                "url": "https://www.patreon.com/phpdoctrine",
+                "type": "patreon"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
+                "type": "tidelift"
+            }
         ]
     },
     {
@@ -646,6 +660,201 @@
             "data",
             "faker",
             "fixtures"
+        ]
+    },
+    {
+        "name": "guzzlehttp/guzzle",
+        "version": "6.5.4",
+        "version_normalized": "6.5.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/guzzle.git",
+            "reference": "a4a1b6930528a8f7ee03518e6442ec7a44155d9d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a4a1b6930528a8f7ee03518e6442ec7a44155d9d",
+            "reference": "a4a1b6930528a8f7ee03518e6442ec7a44155d9d",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "guzzlehttp/promises": "^1.0",
+            "guzzlehttp/psr7": "^1.6.1",
+            "php": ">=5.5",
+            "symfony/polyfill-intl-idn": "1.17.0"
+        },
+        "require-dev": {
+            "ext-curl": "*",
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+            "psr/log": "^1.1"
+        },
+        "suggest": {
+            "psr/log": "Required for using the Log middleware"
+        },
+        "time": "2020-05-25T19:35:05+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "6.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GuzzleHttp\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Guzzle is a PHP HTTP client library",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "client",
+            "curl",
+            "framework",
+            "http",
+            "http client",
+            "rest",
+            "web service"
+        ]
+    },
+    {
+        "name": "guzzlehttp/promises",
+        "version": "v1.3.1",
+        "version_normalized": "1.3.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/promises.git",
+            "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+            "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.0"
+        },
+        "time": "2016-12-20T10:07:11+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GuzzleHttp\\Promise\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Guzzle promises library",
+        "keywords": [
+            "promise"
+        ]
+    },
+    {
+        "name": "guzzlehttp/psr7",
+        "version": "1.6.1",
+        "version_normalized": "1.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/psr7.git",
+            "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
+            "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "psr/http-message": "~1.0",
+            "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+        },
+        "provide": {
+            "psr/http-message-implementation": "1.0"
+        },
+        "require-dev": {
+            "ext-zlib": "*",
+            "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+        },
+        "suggest": {
+            "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
+        },
+        "time": "2019-07-01T23:21:34+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.6-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GuzzleHttp\\Psr7\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            },
+            {
+                "name": "Tobias Schultze",
+                "homepage": "https://github.com/Tobion"
+            }
+        ],
+        "description": "PSR-7 message implementation that also provides common utility methods",
+        "keywords": [
+            "http",
+            "message",
+            "psr-7",
+            "request",
+            "response",
+            "stream",
+            "uri",
+            "url"
         ]
     },
     {
@@ -1009,17 +1218,17 @@
     },
     {
         "name": "lcobucci/jwt",
-        "version": "3.3.1",
-        "version_normalized": "3.3.1.0",
+        "version": "3.3.2",
+        "version_normalized": "3.3.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/lcobucci/jwt.git",
-            "reference": "a11ec5f4b4d75d1fcd04e133dede4c317aac9e18"
+            "reference": "56f10808089e38623345e28af2f2d5e4eb579455"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/lcobucci/jwt/zipball/a11ec5f4b4d75d1fcd04e133dede4c317aac9e18",
-            "reference": "a11ec5f4b4d75d1fcd04e133dede4c317aac9e18",
+            "url": "https://api.github.com/repos/lcobucci/jwt/zipball/56f10808089e38623345e28af2f2d5e4eb579455",
+            "reference": "56f10808089e38623345e28af2f2d5e4eb579455",
             "shasum": ""
         },
         "require": {
@@ -1034,7 +1243,7 @@
             "phpunit/phpunit": "^5.7 || ^7.3",
             "squizlabs/php_codesniffer": "~2.3"
         },
-        "time": "2019-05-24T18:30:49+00:00",
+        "time": "2020-05-22T08:21:12+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1062,21 +1271,31 @@
         "keywords": [
             "JWS",
             "jwt"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/lcobucci",
+                "type": "github"
+            },
+            {
+                "url": "https://www.patreon.com/lcobucci",
+                "type": "patreon"
+            }
         ]
     },
     {
         "name": "league/flysystem",
-        "version": "1.0.68",
-        "version_normalized": "1.0.68.0",
+        "version": "1.0.69",
+        "version_normalized": "1.0.69.0",
         "source": {
             "type": "git",
             "url": "https://github.com/thephpleague/flysystem.git",
-            "reference": "3e4198372276ec99ac3409a21d7c9d1ced9026e4"
+            "reference": "7106f78428a344bc4f643c233a94e48795f10967"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/3e4198372276ec99ac3409a21d7c9d1ced9026e4",
-            "reference": "3e4198372276ec99ac3409a21d7c9d1ced9026e4",
+            "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7106f78428a344bc4f643c233a94e48795f10967",
+            "reference": "7106f78428a344bc4f643c233a94e48795f10967",
             "shasum": ""
         },
         "require": {
@@ -1106,7 +1325,7 @@
             "spatie/flysystem-dropbox": "Allows you to use Dropbox storage",
             "srmklive/flysystem-dropbox-v2": "Allows you to use Dropbox storage for PHP 5 applications"
         },
-        "time": "2020-05-12T20:33:44+00:00",
+        "time": "2020-05-18T15:13:39+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1154,6 +1373,199 @@
                 "url": "https://offset.earth/frankdejonge",
                 "type": "other"
             }
+        ]
+    },
+    {
+        "name": "league/flysystem-azure-blob-storage",
+        "version": "0.1.6",
+        "version_normalized": "0.1.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/flysystem-azure-blob-storage.git",
+            "reference": "97215345f3c42679299ba556a4d16d4847ee7f6d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/flysystem-azure-blob-storage/zipball/97215345f3c42679299ba556a4d16d4847ee7f6d",
+            "reference": "97215345f3c42679299ba556a4d16d4847ee7f6d",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/psr7": "^1.5",
+            "league/flysystem": "^1.0",
+            "microsoft/azure-storage-blob": "^1.1",
+            "php": ">=5.6"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7"
+        },
+        "time": "2019-06-07T20:42:16+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\Flysystem\\AzureBlobStorage\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Frank de Jonge",
+                "email": "info@frenky.net"
+            }
+        ]
+    },
+    {
+        "name": "matthewbdaly/laravel-azure-storage",
+        "version": "1.3.8",
+        "version_normalized": "1.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/matthewbdaly/laravel-azure-storage.git",
+            "reference": "5bf94a54b149ad17484796dc135f9ce44b6cef0b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/matthewbdaly/laravel-azure-storage/zipball/5bf94a54b149ad17484796dc135f9ce44b6cef0b",
+            "reference": "5bf94a54b149ad17484796dc135f9ce44b6cef0b",
+            "shasum": ""
+        },
+        "require": {
+            "league/flysystem-azure-blob-storage": "^0.1.6"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.0",
+            "orchestra/testbench": "^4.0",
+            "php-coveralls/php-coveralls": "^2.1",
+            "phpunit/phpunit": "^8.0",
+            "psy/psysh": "^0.9.9",
+            "squizlabs/php_codesniffer": "^3.4"
+        },
+        "time": "2020-03-09T20:17:30+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Matthewbdaly\\LaravelAzureStorage\\AzureStorageServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Matthewbdaly\\LaravelAzureStorage\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Matthew Daly",
+                "email": "matthewbdaly@gmail.com"
+            }
+        ],
+        "description": "Microsoft Azure Blob Storage integration for Laravel's Storage API",
+        "keywords": [
+            "azure",
+            "laravel",
+            "storage"
+        ]
+    },
+    {
+        "name": "microsoft/azure-storage-blob",
+        "version": "1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Azure/azure-storage-blob-php.git",
+            "reference": "6a333cd28a3742c3e99e79042dc6510f9f917919"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Azure/azure-storage-blob-php/zipball/6a333cd28a3742c3e99e79042dc6510f9f917919",
+            "reference": "6a333cd28a3742c3e99e79042dc6510f9f917919",
+            "shasum": ""
+        },
+        "require": {
+            "microsoft/azure-storage-common": "~1.4",
+            "php": ">=5.6.0"
+        },
+        "time": "2020-01-02T07:18:59+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "MicrosoftAzure\\Storage\\Blob\\": "src/Blob"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Azure Storage PHP Client Library",
+                "email": "dmsh@microsoft.com"
+            }
+        ],
+        "description": "This project provides a set of PHP client libraries that make it easy to access Microsoft Azure Storage Blob APIs.",
+        "keywords": [
+            "azure",
+            "blob",
+            "php",
+            "sdk",
+            "storage"
+        ]
+    },
+    {
+        "name": "microsoft/azure-storage-common",
+        "version": "1.4.1",
+        "version_normalized": "1.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Azure/azure-storage-common-php.git",
+            "reference": "be4df800761d0d0fa91a9460c7f42517197d57a0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Azure/azure-storage-common-php/zipball/be4df800761d0d0fa91a9460c7f42517197d57a0",
+            "reference": "be4df800761d0d0fa91a9460c7f42517197d57a0",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/guzzle": "~6.0",
+            "php": ">=5.6.0"
+        },
+        "time": "2020-01-02T07:15:54+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "MicrosoftAzure\\Storage\\Common\\": "src/Common"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Azure Storage PHP Client Library",
+                "email": "dmsh@microsoft.com"
+            }
+        ],
+        "description": "This project provides a set of common code shared by Azure Storage Blob, Table, Queue and File PHP client libraries.",
+        "keywords": [
+            "azure",
+            "common",
+            "php",
+            "sdk",
+            "storage"
         ]
     },
     {
@@ -1225,17 +1637,17 @@
     },
     {
         "name": "monolog/monolog",
-        "version": "1.25.3",
-        "version_normalized": "1.25.3.0",
+        "version": "1.25.4",
+        "version_normalized": "1.25.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Seldaek/monolog.git",
-            "reference": "fa82921994db851a8becaf3787a9e73c5976b6f1"
+            "reference": "3022efff205e2448b560c833c6fbbf91c3139168"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fa82921994db851a8becaf3787a9e73c5976b6f1",
-            "reference": "fa82921994db851a8becaf3787a9e73c5976b6f1",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/3022efff205e2448b560c833c6fbbf91c3139168",
+            "reference": "3022efff205e2448b560c833c6fbbf91c3139168",
             "shasum": ""
         },
         "require": {
@@ -1249,11 +1661,10 @@
             "aws/aws-sdk-php": "^2.4.9 || ^3.0",
             "doctrine/couchdb": "~1.0@dev",
             "graylog2/gelf-php": "~1.0",
-            "jakub-onderka/php-parallel-lint": "0.9",
             "php-amqplib/php-amqplib": "~2.4",
             "php-console/php-console": "^3.1.3",
+            "php-parallel-lint/php-parallel-lint": "^1.0",
             "phpunit/phpunit": "~4.5",
-            "phpunit/phpunit-mock-objects": "2.3.0",
             "ruflin/elastica": ">=0.90 <3.0",
             "sentry/sentry": "^0.13",
             "swiftmailer/swiftmailer": "^5.3|^6.0"
@@ -1271,7 +1682,7 @@
             "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
             "sentry/sentry": "Allow sending log messages to a Sentry server"
         },
-        "time": "2019-12-20T14:15:16+00:00",
+        "time": "2020-05-22T07:31:27+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1301,6 +1712,16 @@
             "log",
             "logging",
             "psr-3"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/Seldaek",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                "type": "tidelift"
+            }
         ]
     },
     {
@@ -1420,17 +1841,17 @@
     },
     {
         "name": "nesbot/carbon",
-        "version": "2.34.0",
-        "version_normalized": "2.34.0.0",
+        "version": "2.34.2",
+        "version_normalized": "2.34.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/briannesbitt/Carbon.git",
-            "reference": "52ea68aebbad8a3b27b5d24e4c66ebe1933f8399"
+            "reference": "3e87404329b8072295ea11d548b47a1eefe5a162"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/52ea68aebbad8a3b27b5d24e4c66ebe1933f8399",
-            "reference": "52ea68aebbad8a3b27b5d24e4c66ebe1933f8399",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/3e87404329b8072295ea11d548b47a1eefe5a162",
+            "reference": "3e87404329b8072295ea11d548b47a1eefe5a162",
             "shasum": ""
         },
         "require": {
@@ -1448,7 +1869,7 @@
             "phpunit/phpunit": "^7.5 || ^8.0",
             "squizlabs/php_codesniffer": "^3.4"
         },
-        "time": "2020-05-12T19:53:34+00:00",
+        "time": "2020-05-19T22:14:16+00:00",
         "bin": [
             "bin/carbon"
         ],
@@ -1625,17 +2046,17 @@
     },
     {
         "name": "opis/closure",
-        "version": "3.5.1",
-        "version_normalized": "3.5.1.0",
+        "version": "3.5.3",
+        "version_normalized": "3.5.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/opis/closure.git",
-            "reference": "93ebc5712cdad8d5f489b500c59d122df2e53969"
+            "reference": "cac47092144043d5d676e2e7cf8d0d2f83fc89ca"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/opis/closure/zipball/93ebc5712cdad8d5f489b500c59d122df2e53969",
-            "reference": "93ebc5712cdad8d5f489b500c59d122df2e53969",
+            "url": "https://api.github.com/repos/opis/closure/zipball/cac47092144043d5d676e2e7cf8d0d2f83fc89ca",
+            "reference": "cac47092144043d5d676e2e7cf8d0d2f83fc89ca",
             "shasum": ""
         },
         "require": {
@@ -1645,7 +2066,7 @@
             "jeremeamia/superclosure": "^2.0",
             "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
         },
-        "time": "2019-11-29T22:36:02+00:00",
+        "time": "2020-05-25T09:32:45+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2515,6 +2936,58 @@
         ]
     },
     {
+        "name": "psr/http-message",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/http-message.git",
+            "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+            "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-08-06T14:39:51+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Http\\Message\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for HTTP messages",
+        "homepage": "https://github.com/php-fig/http-message",
+        "keywords": [
+            "http",
+            "http-message",
+            "psr",
+            "psr-7",
+            "request",
+            "response"
+        ]
+    },
+    {
         "name": "psr/log",
         "version": "1.1.3",
         "version_normalized": "1.1.3.0",
@@ -2688,6 +3161,48 @@
             "interactive",
             "shell"
         ]
+    },
+    {
+        "name": "ralouphie/getallheaders",
+        "version": "3.0.3",
+        "version_normalized": "3.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ralouphie/getallheaders.git",
+            "reference": "120b605dfeb996808c31b6477290a714d356e822"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+            "reference": "120b605dfeb996808c31b6477290a714d356e822",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6"
+        },
+        "require-dev": {
+            "php-coveralls/php-coveralls": "^2.1",
+            "phpunit/phpunit": "^5 || ^6.5"
+        },
+        "time": "2019-03-08T08:55:37+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/getallheaders.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ralph Khattar",
+                "email": "ralph.khattar@gmail.com"
+            }
+        ],
+        "description": "A polyfill for getallheaders."
     },
     {
         "name": "ramsey/uuid",
@@ -5425,17 +5940,17 @@
     },
     {
         "name": "vlucas/phpdotenv",
-        "version": "v3.6.4",
-        "version_normalized": "3.6.4.0",
+        "version": "v3.6.5",
+        "version_normalized": "3.6.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/vlucas/phpdotenv.git",
-            "reference": "10d3f853fdf1f3a6b3c7ea0c4620d2f699713db5"
+            "reference": "8b64814b356b96a90d2bc942b152c80d8888b8d4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/10d3f853fdf1f3a6b3c7ea0c4620d2f699713db5",
-            "reference": "10d3f853fdf1f3a6b3c7ea0c4620d2f699713db5",
+            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8b64814b356b96a90d2bc942b152c80d8888b8d4",
+            "reference": "8b64814b356b96a90d2bc942b152c80d8888b8d4",
             "shasum": ""
         },
         "require": {
@@ -5452,7 +5967,7 @@
             "ext-filter": "Required to use the boolean validator.",
             "ext-pcre": "Required to use most of the library."
         },
-        "time": "2020-05-02T13:46:13+00:00",
+        "time": "2020-05-23T09:42:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
